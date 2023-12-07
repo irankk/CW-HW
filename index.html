@@ -49,7 +49,7 @@
         border-radius: 10px;
         margin: 10px 0;
     }
-    .layout aside, .layout main{
+    .layout main{
         background-color: red;
         padding: 20px 40px;
         border-radius: 10px;
@@ -61,7 +61,21 @@
     .layout .flex{
         display: flex;
         gap: 10px;
-
+    }
+    .layout aside{
+        background-color: red;
+        padding: 20px 40px;
+        border-radius: 10px 10px 0 0;
+    }
+    .layout-aside2{
+        background-color: red;
+        padding: 20px 40px;
+        border-radius: 0 0 10px 10px;
+    }
+    .layout-aside3{
+        background-color: red;
+        padding: 4px 8px;
+        border-radius: 10px;
     }
 </style>
 <body>
@@ -116,14 +130,18 @@
         <nav>menu</nav>
         <div class="layout aside">
             <aside>aside1</aside>
+        <div class="layout-aside2">
             <aside>aside2</aside>
+        </div>
         </div>
         <main class="layout main">
             main con
             <section>section1</section>
             <section>section2</section>
         </main>
-        <aside>aside3</aside>
+        <div class="layout-aside3">
+            <aside>aside3</aside>
+        </div>
         </div>
         <div class="layout footer">
             <footer>footer</footer>
