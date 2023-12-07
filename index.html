@@ -21,13 +21,47 @@
         max-width: 1000px;
         color: white;
         border-color: whitesmoke;
-}
+    }
     .simg{
     margin: auto;
     border: 5px dashed white;
-}
+    }
     .bgmclip{
         background-clip: border-box;
+    }
+    .layout{
+        text-transform: uppercase;
+        border-radius: 10px;
+        margin: 50px auto;
+        max-width: 800px;
+        color: white;
+        font-weight: bold;
+        direction: initial;
+    }
+    .layout header{
+        background-color: red;
+        border-radius: 10px;
+        padding: 20px 40px;
+    }
+    .layout nav, .layout footer{
+        background-color: rgb(148, 0, 0);
+        padding: 10px 40px;
+        border-radius: 10px;
+        margin: 10px 0;
+    }
+    .layout aside, .layout main{
+        background-color: red;
+        padding: 20px 40px;
+        border-radius: 10px;
+    }
+    .layout section{
+        background-color: rgb(122, 0, 0);
+        padding: 5px 40px 60px;
+    }
+    .layout .flex{
+        display: flex;
+        gap: 10px;
+
     }
 </style>
 <body>
@@ -68,6 +102,33 @@
             <h3 class=".bgmclip">text</h3>
            <img src="html544.png" alt="."class="simg">
         </details>
+    <pre>
+┈┏╮┈┈┈╭┓┈┈╭┳━╮┈
+┈┃┗━━━┛┃┈┈╰┻╮┃┈
+┈┃╰╯┈╰╯┣━━━╮┃┃┈
+┈┃┈┈▲┈┈┃┈╭━┣╯┃┈
+┈╰┳╰━╯┳╯╭┛┈┣━╯┈
+┈┈╰╯┈╰╯┈╰━━╯┈┈┈
+    </pre>
+    <div class="layout">
+        <div class="layout nav">
+        <header>header</header>
+        <nav>menu</nav>
+        <div class="layout aside">
+            <aside>aside1</aside>
+            <aside>aside2</aside>
+        </div>
+        <main class="layout main">
+            main con
+            <section>section1</section>
+            <section>section2</section>
+        </main>
+        <aside>aside3</aside>
+        </div>
+        <div class="layout footer">
+            <footer>footer</footer>
+        </div>
+    </div>
     <a href="conn.html" target="_blank">тыкай</a>
 </body>
 </html>
